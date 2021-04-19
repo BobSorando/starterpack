@@ -5,6 +5,7 @@
 
 // // Import vendor jQuery plugin example (not module)
 // require('~/app/libs/mmenu/dist/mmenu.js')
+// require('~/app/js/libs/owl.carousel.min.js')
 
 document.addEventListener('DOMContentLoaded', () => {
 

@@ -74,6 +74,8 @@ function fonts(){
 function watch(){
   gulp.watch('./src/less/**/*.less', Less);
   gulp.watch('./src/js/script.js', custom_scripts);
+  gulp.watch('./src/fonts/**/*', fonts);
+  gulp.watch('./src/img/**/*', img);
 }
 
 var build = gulp.series(clear, gulp.parallel(Less, scripts_vend, custom_scripts, img, styles_vend, fonts));

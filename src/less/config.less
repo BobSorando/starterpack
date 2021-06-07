@@ -9,12 +9,6 @@
 @title_font: @userfont;
 @lineheight-title: 1.2;
 @titlecolor:rgba(40, 110, 140, 0.871);
-@gray: #f6f7fb;
-@olive: #748923;
-@dark: #0F2345;
-@blue: #44819B;
-@blue-bg: #A6E3F3;
-@olive-bg: #DCEF96;
 
 // IMPORT SECTION
 
@@ -134,38 +128,21 @@ a.phone{
 	color: @textcolor;
 }
 a.mail{
-	color: @dark;
+	color: @titlecolor;
 	&:hover{
 		opacity: 0.6;
 	}
 }
 a{
-	color: @dark;
+	color: @titlecolor;
 	transition: all 0.3s ease;
 	text-decoration: none;
 	&:hover{
 		text-decoration: none;
-		color: @dark;
 	}
 	&:hover, &:active{
 		opacity: 0.6;
 	}
-	&.play{
-		background-color: transparent;
-		display: block;
-		width: 82px;
-		height: 94px;
-		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='89' viewBox='0 0 80 89' fill='none'%3E%3Cpath d='M0.5625 4.048C0.5625 0.976928 3.88001 -0.948568 6.54663 0.574787L77.3577 41.0268C80.0455 42.5623 80.0455 46.4377 77.3577 47.9732L6.54663 88.4252C3.88 89.9486 0.5625 88.0231 0.5625 84.952V4.048Z' fill='%23FFCF6A' fill-opacity='0.87'/%3E%3C/svg%3E");
-		position: absolute;
-		background-repeat: no-repeat;
-		background-size: contain;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-}
-.p0{
-	padding: 0;
 }
 p{
 	font-size: 18px;
@@ -207,7 +184,7 @@ button{
 	outline: none;
 	line-height: 1.5;
 	transition: all 0.3s ease;
-	color: @dark;
+	color: @titlecolor;
 	border-radius: 4px;
 	font-family: @userfont;
 	font-weight: 400;
